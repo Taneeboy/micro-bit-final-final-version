@@ -1,5 +1,3 @@
-let asteroid_3 = 0
-let asteroid_2 = 0
 let level = 0
 let my_position = 2
 let asteroid_1 = randint(0, 4)
@@ -7,7 +5,6 @@ let count = 0
 let score = 0
 let score_manager = 0
 basic.forever(function () {
-    music.play(music.stringPlayable("- - - - - - - - ", 120), music.PlaybackMode.InBackground)
     my_position = Math.constrain(Math.round((input.acceleration(Dimension.X) + 500) / 250), 0, 4)
     basic.clearScreen()
     led.plot(my_position, 4)
