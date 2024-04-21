@@ -1,7 +1,3 @@
-def on_forever():
-    music._play_default_background(music.built_in_playable_melody(Melodies.CHASE),
-        music.PlaybackMode.LOOPING_IN_BACKGROUND)
-basic.forever(on_forever)
 # Python code
 #
 my_position = 0
@@ -20,6 +16,7 @@ score = 0
 score_manager = 0
 
 def on_forever():
+    music.PlaybackMode.UNTIL_DONE)music._play_default_background(music.built_in_playable_melody(Melodies.NYAN),
   global my_position
   global count
   global score
@@ -64,3 +61,4 @@ def on_forever():
   if count == 0:
     asteroid_1 = randint(0, 4)
 basic.forever(on_forever)
+
